@@ -1,0 +1,267 @@
+EmployeeID,Age,Gender,Department,City,YearsExperience,MonthlySalary,PerformanceScore,Attrition
+1001,,Female,Finance,Los Angeles,13.0,44092.94,4,No
+1002,49.0,Female,IT,Chicago,5.0,51287.22,4,No
+1003,35.0,Female,IT,Chicago,,53883.5,4,Yes
+1004,28.0,Male,HR,Houston,2.0,64310.08,4,Yes
+1005,41.0,Male,IT,New York,6.0,57665.52,4,No
+1006,59.0,Male,Sales,Los Angeles,7.0,34969.83,2,No
+1007,,Female,Marketing,New York,14.0,60702.97,1,No
+1008,43.0,Male,Marketing,New York,28.0,64158.79,3,No
+1009,31.0,Female,Finance,Houston,32.0,63396.86,1,No
+1010,31.0,Female,IT,Los Angeles,,,4,Yes
+1011,44.0,Male,Sales,Los Angeles,26.0,67508.83,2,No
+1012,56.0,Male,Finance,Phoenix,28.0,61887.7,5,No
+1013,44.0,Female,HR,New York,32.0,53947.51,2,No
+1014,23.0,Male,Finance,New York,26.0,30085.59,4,No
+1015,42.0,Female,Finance,Chicago,32.0,61444.27,2,No
+1016,22.0,Female,IT,Phoenix,3.0,58115.32,2,No
+1017,44.0,Female,HR,Chicago,21.0,59073.68,4,No
+1018,50.0,Female,Finance,Chicago,1.0,35848.77,2,No
+1019,58.0,Female,Sales,Chicago,9.0,38784.15,3,No
+1020,22.0,Male,Sales,houston,4.0,70797.29,3,No
+1021,41.0,Male,Marketing,Houston,9.0,54406.67,2,No
+1022,53.0,Female,HR,Chicago,32.0,65222.51,5,Yes
+1023,32.0,Female,HR,Phoenix,,55424.78,4,No
+1024,42.0,Male,Marketing,New York,30.0,55446.34,3,Yes
+1025,45.0,Male,,Phoenix,23.0,69074.26,5,No
+1026,47.0,Female,HR,Los Angeles,14.0,47259.33,2,No
+1027,48.0,Male,Sales,Houston,28.0,56441.81,5,No
+1028,36.0,Female,Sales,New York,7.0,48065.87,1,No
+1029,35.0,Male,IT,New York,4.0,48482.56,3,Yes
+1030,23.0,Female,HR,Los Angeles,28.0,50362.42,2,No
+1031,57.0,Male,Finance,Los Angeles,3.0,58332.01,4,No
+1032,27.0,Female,Marketing,Chicago,11.0,47818.77,2,Yes
+1033,41.0,Male,Marketing,Houston,1.0,73836.34,4,No
+1034,29.0,Male,Finance,Houston,26.0,41580.89,2,No
+1035,59.0,Female,IT,Phoenix,30.0,52196.93,5,No
+1036,38.0,Male,Marketing,Chicago,25.0,48404.03,5,Yes
+1037,24.0,Female,HR,Chicago,26.0,,5,Yes
+1038,45.0,Male,IT,Chicago,4.0,57948.32,1,No
+1039,34.0,Female,HR,Chicago,19.0,70477.67,4,No
+1040,29.0,Male,Sales,Houston,10.0,32716.59,5,No
+1041,46.0,Female,IT,Houston,9.0,59005.75,1,No
+1042,22.0,Male,Marketing,Chicago,5.0,68344.46,4,No
+1043,,Female,IT,phoenix,7.0,56234.26,2,No
+1044,48.0,Male,IT,New York,22.0,70982.21,1,Yes
+1045,27.0,Female,IT,New York,25.0,47240.67,3,No
+1046,28.0,Female,IT,phoenix,11.0,76140.21,1,No
+1047,55.0,Female,HR,Chicago,25.0,89483.47,1,No
+1048,34.0,Male,Sales,Houston,12.0,49557.42,4,No
+1049,37.0,Female,Finance,New York,17.0,48317.46,2,No
+1050,56.0,Male,IT,Los Angeles,24.0,76800.77,3,No
+1051,24.0,Female,Marketing,Los Angeles,32.0,78693.58,5,No
+1052,22.0,Male,IT,Phoenix,11.0,47157.1,5,No
+1053,26.0,Female,Marketing,Chicago,3.0,48697.2,1,No
+1054,24.0,Male,HR,New York,4.0,,4,No
+1055,49.0,Male,Marketing,Chicago,7.0,34833.24,4,No
+1056,38.0,Female,Finance,New York,27.0,,5,No
+1057,46.0,Male,Sales,Phoenix,30.0,39937.89,3,No
+1058,54.0,Male,Marketing,Phoenix,,43483.04,2,No
+1059,30.0,Female,Marketing,Los Angeles,28.0,54479.73,3,No
+1060,56.0,Male,Sales,Chicago,,58513.22,2,No
+1061,34.0,Male,,Los Angeles,21.0,78257.51,5,Yes
+1062,,Male,IT,Chicago,10.0,40024.69,2,No
+1063,35.0,Female,Marketing,los angeles,22.0,69764.84,4,No
+1064,28.0,Male,Sales,Houston,0.0,51790.17,1,No
+1065,34.0,Female,HR,Houston,20.0,54258.04,1,No
+1066,43.0,Male,,Houston,25.0,65122.29,5,No
+1067,,Male,HR,Houston,22.0,38159.17,4,No
+1068,36.0,Male,Finance,New York,0.0,60736.15,3,Yes
+1069,38.0,Female,IT,Houston,14.0,57496.78,4,Yes
+1070,44.0,Male,Sales,Phoenix,20.0,62386.77,1,No
+1071,46.0,Male,Marketing,Phoenix,8.0,59337.53,1,No
+1072,45.0,Female,,New York,8.0,91829.5,4,No
+1073,49.0,Male,Sales,Houston,9.0,45433.9,4,No
+1074,35.0,Female,Marketing,Houston,25.0,47035.05,1,No
+1075,21.0,Female,Sales,Houston,34.0,45652.89,3,No
+1076,45.0,Male,HR,Los Angeles,24.0,46667.84,5,Yes
+1077,27.0,Female,Sales,Chicago,25.0,45439.19,5,No
+1078,29.0,Male,Sales,Los Angeles,10.0,,4,No
+1079,44.0,Female,Sales,Chicago,,76307.56,5,No
+1080,21.0,Female,Finance,Houston,6.0,46438.81,1,Yes
+1081,28.0,Male,Sales,Houston,17.0,42514.67,1,No
+1082,44.0,Female,Marketing,Los Angeles,26.0,62071.23,4,No
+1083,31.0,Female,HR,Los Angeles,33.0,,4,No
+1084,37.0,Female,HR,Chicago,26.0,64493.98,4,Yes
+1085,28.0,Female,Sales,Phoenix,16.0,58043.85,3,No
+1086,55.0,Female,Finance,Chicago,23.0,145187.28,5,No
+1087,55.0,Male,Finance,Los Angeles,24.0,78212.58,4,No
+1088,53.0,Female,Marketing,Los Angeles,6.0,81938.17,2,No
+1089,25.0,Male,Sales,New York,5.0,45808.17,2,Yes
+1090,59.0,Female,HR,Los Angeles,23.0,49184.48,1,No
+1091,48.0,Male,,New York,32.0,59287.98,5,Yes
+1092,27.0,Male,Sales,Phoenix,28.0,60016.85,4,No
+1093,29.0,Female,Finance,Chicago,21.0,64878.16,2,No
+1094,28.0,Female,Finance,Chicago,25.0,,5,No
+1095,32.0,Female,HR,new york,27.0,52345.79,1,No
+1096,54.0,Male,IT,Chicago,20.0,43025.54,3,Yes
+1097,53.0,Female,Marketing,los angeles,6.0,34310.21,5,No
+1098,43.0,Male,Marketing,Houston,16.0,44036.05,5,No
+1099,44.0,Male,HR,New York,19.0,54503.1,3,No
+1100,57.0,Male,Finance,Chicago,19.0,81918.37,5,No
+1101,55.0,Female,Sales,New York,21.0,47235.83,1,No
+1102,,Female,Finance,New York,27.0,58356.82,1,Yes
+1103,47.0,Male,HR,Houston,,54753.66,3,Yes
+1104,55.0,Male,Marketing,Los Angeles,0.0,72825.9,4,Yes
+1105,21.0,Female,Finance,New York,31.0,92903.99,2,No
+1106,55.0,Male,Marketing,Chicago,12.0,47036.97,4,No
+1107,57.0,Female,Sales,Phoenix,29.0,47658.41,5,No
+1108,34.0,Male,Marketing,New York,22.0,70662.41,2,No
+1109,23.0,Female,Marketing,New York,18.0,65228.37,3,No
+1110,21.0,Male,IT,Houston,31.0,82700.61,3,No
+1111,25.0,Female,IT,Los Angeles,29.0,63758.92,2,No
+1112,46.0,Male,IT,Phoenix,28.0,49610.62,1,No
+1113,34.0,Female,Marketing,Chicago,28.0,63859.82,2,No
+1114,59.0,Female,,Phoenix,29.0,71630.55,5,No
+1115,47.0,Male,Marketing,Chicago,15.0,67307.23,1,Yes
+1116,29.0,Male,HR,Los Angeles,18.0,62609.11,3,No
+1117,35.0,Female,HR,Chicago,17.0,71000.12,2,No
+1118,35.0,Male,IT,Houston,0.0,72539.43,4,No
+1119,46.0,Female,Finance,Houston,13.0,75732.38,4,No
+1120,33.0,Male,Sales,Houston,1.0,64730.65,5,No
+1121,52.0,Female,IT,Houston,27.0,52493.23,4,No
+1122,59.0,Female,IT,phoenix,29.0,57200.71,2,No
+1123,52.0,Female,Finance,Los Angeles,3.0,328939.335,2,No
+1124,24.0,Female,Sales,Chicago,0.0,42745.96,4,No
+1125,50.0,Female,Marketing,Chicago,7.0,60530.1,2,No
+1126,57.0,Female,Marketing,Houston,28.0,49099.92,5,No
+1127,43.0,Male,IT,Houston,2.0,55431.17,1,Yes
+1128,59.0,Male,Sales,New York,31.0,74176.78,5,Yes
+1129,35.0,Male,IT,los angeles,9.0,57866.49,5,No
+1130,49.0,Female,HR,Phoenix,9.0,55696.55,2,No
+1131,56.0,Female,IT,chicago,18.0,34602.16,1,Yes
+1132,33.0,Female,IT,New York,33.0,66193.8,2,Yes
+1133,52.0,Female,Marketing,New York,32.0,64682.26,3,No
+1134,27.0,Male,Marketing,Chicago,22.0,87448.82,2,No
+1135,42.0,Male,Marketing,Phoenix,27.0,50383.33,2,No
+1136,48.0,Female,HR,New York,31.0,58287.25,2,No
+1137,22.0,Male,Marketing,New York,6.0,58740.76,1,No
+1138,26.0,Male,Sales,los angeles,28.0,78661.8,2,No
+1139,48.0,Female,Finance,Phoenix,7.0,53570.57,1,No
+1140,48.0,Male,Sales,New York,0.0,59185.32,4,No
+1141,40.0,Female,Sales,Phoenix,2.0,64118.45,3,Yes
+1142,50.0,Male,Marketing,Chicago,23.0,260096.13,1,No
+1143,31.0,Female,Finance,Houston,22.0,48303.5,4,No
+1144,48.0,Female,Finance,New York,7.0,57911.35,1,No
+1145,45.0,Female,Finance,Los Angeles,2.0,71104.48,1,No
+1146,59.0,Female,HR,chicago,32.0,39602.27,3,No
+1147,53.0,Male,Marketing,Phoenix,27.0,56994.55,5,No
+1148,21.0,Female,Finance,Chicago,7.0,44498.19,5,Yes
+1149,47.0,Female,HR,new york,33.0,72925.7,1,No
+1150,33.0,Female,IT,Phoenix,34.0,32152.2,2,No
+1151,23.0,Male,IT,houston,31.0,,4,No
+1152,,Female,HR,Chicago,23.0,60658.18,2,Yes
+1153,26.0,Male,HR,New York,13.0,78482.86,2,No
+1154,28.0,Female,,Los Angeles,31.0,54013.75,1,Yes
+1155,47.0,Male,Marketing,Phoenix,,46672.01,1,No
+1156,29.0,Male,IT,Chicago,3.0,83217.36,1,No
+1157,,Female,Finance,Chicago,20.0,33279.79,1,No
+1158,53.0,Male,IT,Houston,13.0,22017.91,5,No
+1159,44.0,Female,Finance,Houston,30.0,61600.22,1,No
+1160,35.0,Female,Finance,Los Angeles,17.0,47469.19,5,Yes
+1161,,Female,Marketing,los angeles,6.0,39681.51,5,Yes
+1162,52.0,Male,Sales,New York,9.0,65625.35,1,No
+1163,,Male,Sales,New York,6.0,58657.01,3,No
+1164,32.0,Female,HR,Los Angeles,32.0,46538.82,4,No
+1165,59.0,Female,Marketing,Los Angeles,22.0,35795.43,2,No
+1166,22.0,Male,Finance,Phoenix,20.0,68086.86,5,Yes
+1167,,Female,Sales,Houston,18.0,64753.02,4,Yes
+1168,57.0,Female,Finance,New York,18.0,53512.36,3,No
+1169,37.0,Female,Sales,Houston,28.0,82699.55,2,No
+1170,,Male,Sales,Houston,17.0,38948.73,2,No
+1171,22.0,Male,Sales,Los Angeles,1.0,32117.12,5,No
+1172,48.0,Male,Marketing,Phoenix,0.0,44621.38,1,No
+1173,43.0,Female,IT,Chicago,4.0,54316.21,3,Yes
+1174,57.0,Female,Finance,Phoenix,19.0,58650.09,5,Yes
+1175,52.0,Female,Marketing,Phoenix,10.0,51381.46,3,No
+1176,53.0,Male,Marketing,Houston,1.0,60280.83,1,No
+1177,21.0,Female,Marketing,Phoenix,2.0,,1,Yes
+1178,39.0,Female,Marketing,New York,22.0,76656.47,5,No
+1179,22.0,Female,Marketing,Houston,11.0,,1,No
+1180,46.0,Female,HR,New York,19.0,71759.44,4,No
+1181,52.0,Male,Finance,Chicago,4.0,60140.88,2,No
+1182,26.0,Male,Marketing,Houston,29.0,61851.3,5,No
+1183,52.0,Female,Finance,Chicago,8.0,63546.51,3,No
+1184,24.0,Male,HR,Houston,33.0,61715.63,4,Yes
+1185,31.0,Male,HR,Los Angeles,,64640.84,5,No
+1186,37.0,Female,Finance,Phoenix,21.0,74937.29,1,No
+1187,58.0,Female,Sales,Los Angeles,23.0,57947.82,1,No
+1188,44.0,Male,IT,Chicago,16.0,65635.06,1,No
+1189,25.0,Female,Sales,Phoenix,9.0,53653.96,1,No
+1190,54.0,Male,Sales,Houston,29.0,76601.76,3,No
+1191,26.0,Female,Sales,Phoenix,22.0,44854.12,4,No
+1192,42.0,Male,Marketing,New York,,82014.11,2,No
+1193,31.0,Female,HR,Phoenix,16.0,54397.63,3,No
+1194,36.0,Male,Sales,New York,16.0,33538.37,3,Yes
+1195,53.0,Male,HR,Phoenix,13.0,56921.57,2,No
+1196,29.0,Male,Finance,New York,8.0,44784.23,2,No
+1197,26.0,Female,IT,Chicago,1.0,67609.65,1,No
+1198,36.0,Male,Finance,Los Angeles,24.0,45210.64,3,Yes
+1199,49.0,Male,Finance,Houston,,48307.25,5,No
+1200,23.0,Female,Marketing,Phoenix,21.0,26656.89,2,No
+1201,40.0,Female,IT,Los Angeles,3.0,48215.41,2,No
+1202,56.0,Male,Finance,Houston,25.0,20000.0,4,No
+1203,39.0,Male,,Houston,28.0,31241.46,5,Yes
+1204,46.0,Female,IT,New York,33.0,66406.22,5,No
+1205,23.0,Female,IT,Chicago,22.0,66787.0,2,No
+1206,39.0,Female,Finance,Chicago,10.0,61381.86,1,No
+1207,40.0,Female,IT,Los Angeles,5.0,,4,No
+1208,52.0,Female,Finance,Chicago,17.0,54284.33,5,Yes
+1209,,Male,Finance,Phoenix,20.0,54945.96,2,Yes
+1210,53.0,Female,Marketing,Chicago,33.0,37624.53,5,Yes
+1211,59.0,Male,Sales,Los Angeles,,77550.97,4,No
+1212,38.0,Male,Finance,Chicago,24.0,68160.43,4,No
+1213,21.0,Male,HR,Phoenix,,51685.54,3,No
+1214,31.0,Female,Sales,New York,,55403.29,2,No
+1215,48.0,Male,Sales,los angeles,21.0,58125.74,4,No
+1216,45.0,Male,Sales,New York,20.0,24373.98,3,Yes
+1217,43.0,Female,Marketing,New York,26.0,51292.34,3,Yes
+1218,51.0,Male,Finance,New York,30.0,44770.24,5,No
+1219,50.0,Male,Marketing,Houston,5.0,39975.7,5,No
+1220,55.0,Female,Finance,Houston,26.0,50783.5,3,No
+1221,27.0,Male,Marketing,New York,33.0,81965.3,5,No
+1222,36.0,Male,Marketing,Los Angeles,11.0,64612.64,4,No
+1223,46.0,Male,HR,Phoenix,6.0,46432.32,1,No
+1224,22.0,Female,,Phoenix,9.0,63588.74,4,No
+1225,21.0,Female,IT,Chicago,16.0,75990.33,3,No
+1226,32.0,Female,HR,Los Angeles,25.0,68869.51,3,Yes
+1227,25.0,Male,Marketing,Houston,20.0,55894.46,4,Yes
+1228,57.0,Male,Sales,New York,27.0,45295.95,5,No
+1229,52.0,Female,IT,Chicago,1.0,65473.35,5,No
+1230,29.0,Male,IT,Phoenix,0.0,60902.28,3,No
+1231,55.0,Male,IT,houston,25.0,68427.9,2,Yes
+1232,39.0,Female,HR,Houston,28.0,,5,No
+1233,36.0,Female,Marketing,New York,20.0,,4,No
+1234,23.0,Male,,Phoenix,10.0,46971.47,5,No
+1235,40.0,Male,,Los Angeles,10.0,74760.91,4,No
+1236,,Male,Sales,Houston,34.0,57963.99,3,No
+1237,53.0,Female,IT,New York,33.0,86128.91,5,No
+1238,44.0,Female,Sales,Los Angeles,23.0,44662.18,4,No
+1239,31.0,Female,HR,Phoenix,21.0,81039.46,3,No
+1240,28.0,Female,Marketing,houston,4.0,57968.66,2,No
+1241,56.0,Male,IT,Los Angeles,32.0,,4,No
+1242,58.0,Female,Sales,Los Angeles,19.0,47741.71,2,No
+1243,40.0,Female,HR,Los Angeles,18.0,50194.79,2,No
+1244,55.0,Female,HR,Houston,34.0,61362.49,1,Yes
+1245,45.0,Female,,Houston,16.0,62842.53,5,No
+1246,55.0,Female,Marketing,Chicago,33.0,46394.5,4,No
+1247,45.0,Male,Sales,Phoenix,8.0,54634.68,2,Yes
+1248,49.0,Male,IT,New York,25.0,,1,Yes
+1249,38.0,Female,Sales,Los Angeles,1.0,80913.15,3,No
+1250,38.0,Male,HR,Chicago,8.0,61544.86,4,No
+1251,22.0,Female,,New York,8.0,55570.05,2,No
+1252,55.0,Female,,Chicago,,56800.47,5,Yes
+1253,36.0,Male,Finance,Houston,0.0,64202.77,1,Yes
+1254,56.0,Male,Sales,los angeles,24.0,39658.11,2,No
+1255,53.0,Female,Marketing,New York,24.0,51139.35,5,No
+1256,24.0,Female,Marketing,New York,34.0,29971.24,2,No
+1257,53.0,Female,HR,New York,2.0,60988.35,4,No
+1258,34.0,Male,Marketing,New York,29.0,64707.94,4,No
+1259,,Female,,New York,33.0,47752.2,4,No
+1260,40.0,Female,Marketing,Chicago,11.0,78609.8,1,No
+1103,47.0,Male,HR,Houston,,54753.66,3,Yes
+1246,55.0,Female,Marketing,Chicago,33.0,46394.5,4,No
+1195,53.0,Male,HR,Phoenix,13.0,56921.57,2,No
+1118,35.0,Male,IT,Houston,0.0,72539.43,4,No
+1191,26.0,Female,Sales,Phoenix,22.0,44854.12,4,No
+1220,55.0,Female,Finance,Houston,26.0,50783.5,3,No
