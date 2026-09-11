@@ -515,3 +515,5 @@ print("best_params", stats["best_params"])
 print("test", stats["test"])
 print("example", stats["example_pred"], stats["example_proba"])
 print("Report:", out_docx)
+import runpy
+runpy.run_path(str(ROOT / "build_report.py"), run_name="week4_rebuild")

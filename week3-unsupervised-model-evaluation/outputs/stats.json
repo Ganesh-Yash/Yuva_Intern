@@ -243,5 +243,160 @@
     "Gender": 0.013,
     "City_Los Angeles": 0.012,
     "Dept_Marketing": 0.011
-  }
+  },
+  "examples": [
+    {
+      "id": 3655,
+      "cluster": 0,
+      "persona": "Mid-career specialists",
+      "age": 37.0,
+      "exp": 13.0,
+      "salary": 66092.7,
+      "perf": 4,
+      "attrition": "No",
+      "scaled": [
+        0.27,
+        0.1,
+        0.24,
+        0.65
+      ],
+      "dist": {
+        "0": 0.239,
+        "1": 2.419,
+        "2": 2.381
+      },
+      "sil": 0.634
+    },
+    {
+      "id": 3680,
+      "cluster": 1,
+      "persona": "Senior high-performers",
+      "age": 48.0,
+      "exp": 27.0,
+      "salary": 101463.02,
+      "perf": 4,
+      "attrition": "No",
+      "scaled": [
+        1.47,
+        1.64,
+        1.59,
+        0.65
+      ],
+      "dist": {
+        "0": 2.451,
+        "1": 0.232,
+        "2": 4.499
+      },
+      "sil": 0.64
+    },
+    {
+      "id": 3643,
+      "cluster": 2,
+      "persona": "Early-career",
+      "age": 26.0,
+      "exp": 4.0,
+      "salary": 34984.83,
+      "perf": 2,
+      "attrition": "Yes",
+      "scaled": [
+        -0.94,
+        -0.89,
+        -0.94,
+        -1.14
+      ],
+      "dist": {
+        "0": 2.456,
+        "1": 4.794,
+        "2": 0.36
+      },
+      "sil": 0.651
+    }
+  ],
+  "scale_means": {
+    "Age": 34.57,
+    "YearsExperience": 12.12,
+    "MonthlySalary": 59756.83,
+    "PerformanceScore": 3.27
+  },
+  "scale_stds": {
+    "Age": 9.13,
+    "YearsExperience": 9.08,
+    "MonthlySalary": 26234.63,
+    "PerformanceScore": 1.12
+  },
+  "threshold_sweep": [
+    {
+      "t": 0.2,
+      "precision": 42.7,
+      "recall": 85.4,
+      "f1": 56.9
+    },
+    {
+      "t": 0.25,
+      "precision": 50.0,
+      "recall": 82.9,
+      "f1": 62.4
+    },
+    {
+      "t": 0.3,
+      "precision": 53.1,
+      "recall": 82.9,
+      "f1": 64.8
+    },
+    {
+      "t": 0.35,
+      "precision": 56.1,
+      "recall": 78.0,
+      "f1": 65.3
+    },
+    {
+      "t": 0.4,
+      "precision": 56.9,
+      "recall": 70.7,
+      "f1": 63.0
+    },
+    {
+      "t": 0.45,
+      "precision": 62.2,
+      "recall": 56.1,
+      "f1": 59.0
+    },
+    {
+      "t": 0.5,
+      "precision": 66.7,
+      "recall": 43.9,
+      "f1": 52.9
+    },
+    {
+      "t": 0.55,
+      "precision": 69.2,
+      "recall": 22.0,
+      "f1": 33.3
+    },
+    {
+      "t": 0.6,
+      "precision": 100.0,
+      "recall": 12.2,
+      "f1": 21.7
+    },
+    {
+      "t": 0.65,
+      "precision": 100.0,
+      "recall": 4.9,
+      "f1": 9.3
+    },
+    {
+      "t": 0.7,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  ],
+  "balanced": {
+    "precision": 54.1,
+    "recall": 80.5,
+    "f1": 64.7
+  },
+  "inertia_drop_2_3": 508.0,
+  "inertia_drop_3_4": 150.4
 }

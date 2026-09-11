@@ -907,3 +907,6 @@ print(json.dumps({k: stats[k] for k in [
     "best_cv_f1", "holdout_default", "holdout_tuned",
 ]}, indent=2))
 print("Report:", out_docx)
+# overwrite with the longer evaluator-oriented report
+import runpy
+runpy.run_path(str(ROOT / "build_report.py"), run_name="week3_rebuild")

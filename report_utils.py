@@ -31,8 +31,7 @@ def _set_run_font(run, name="Calibri", size=11, bold=False, italic=False, color=
 
 
 def _shade_cell(cell, hex_color):
-    tc = cell._tePr if hasattr(cell, "_tePr") else cell._tc
-    tcPr = tc.get_or_add_tcPr()
+    tcPr = cell._tc.get_or_add_tcPr()
     shd = OxmlElement("w:shd")
     shd.set(qn("w:fill"), hex_color)
     shd.set(qn("w:val"), "clear")
