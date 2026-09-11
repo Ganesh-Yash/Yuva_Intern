@@ -1,0 +1,57 @@
+{
+  "model_type": "RandomForestClassifier inside sklearn Pipeline",
+  "task": "binary classification \u2014 employee attrition (Yes=1)",
+  "numeric_features": [
+    "age",
+    "years_experience",
+    "monthly_salary",
+    "performance_score"
+  ],
+  "categorical_features": [
+    "gender",
+    "department",
+    "city"
+  ],
+  "classes": {
+    "0": "No (stay)",
+    "1": "Yes (leave)"
+  },
+  "best_params": {
+    "max_depth": "None",
+    "max_features": "sqrt",
+    "min_samples_split": 2,
+    "n_estimators": 300
+  },
+  "test_metrics": {
+    "accuracy": 78.8,
+    "precision": 66.7,
+    "recall": 25.6,
+    "f1": 37.0,
+    "roc_auc": 0.738,
+    "confusion_matrix": [
+      [
+        116,
+        5
+      ],
+      [
+        29,
+        10
+      ]
+    ]
+  },
+  "n_train": 640,
+  "n_test": 160,
+  "example_input": {
+    "age": 29,
+    "gender": "Female",
+    "department": "Sales",
+    "city": "New York",
+    "years_experience": 3,
+    "monthly_salary": 38000,
+    "performance_score": 2
+  },
+  "serialization": {
+    "joblib": "models/attrition_pipeline.joblib",
+    "pickle": "models/attrition_pipeline.pkl"
+  }
+}

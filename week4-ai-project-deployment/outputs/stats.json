@@ -1,0 +1,227 @@
+{
+  "n_rows": 800,
+  "n_train": 640,
+  "n_test": 160,
+  "attrition_yes": 195,
+  "attrition_no": 605,
+  "attrition_rate": 24.4,
+  "best_params": {
+    "max_depth": "None",
+    "max_features": "sqrt",
+    "min_samples_split": 2,
+    "n_estimators": 300
+  },
+  "best_cv_f1": 25.5,
+  "test": {
+    "accuracy": 78.8,
+    "precision": 66.7,
+    "recall": 25.6,
+    "f1": 37.0,
+    "roc_auc": 0.738,
+    "confusion_matrix": [
+      [
+        116,
+        5
+      ],
+      [
+        29,
+        10
+      ]
+    ]
+  },
+  "classification_report": "              precision    recall  f1-score   support\n\n        Stay       0.80      0.96      0.87       121\n       Leave       0.67      0.26      0.37        39\n\n    accuracy                           0.79       160\n   macro avg       0.73      0.61      0.62       160\nweighted avg       0.77      0.79      0.75       160\n",
+  "top_features": {
+    "monthly_salary": 0.253,
+    "age": 0.176,
+    "years_experience": 0.164,
+    "performance_score": 0.155,
+    "city_Houston": 0.024,
+    "gender_Male": 0.023,
+    "department_Finance": 0.022,
+    "department_IT": 0.022
+  },
+  "example_input": {
+    "age": 29,
+    "gender": "Female",
+    "department": "Sales",
+    "city": "New York",
+    "years_experience": 3,
+    "monthly_salary": 38000,
+    "performance_score": 2
+  },
+  "example_pred": "No",
+  "example_proba": 0.487,
+  "threshold_sweep": [
+    {
+      "t": 0.2,
+      "precision": 38.2,
+      "recall": 74.4,
+      "f1": 50.4
+    },
+    {
+      "t": 0.25,
+      "precision": 40.0,
+      "recall": 61.5,
+      "f1": 48.5
+    },
+    {
+      "t": 0.3,
+      "precision": 43.1,
+      "recall": 56.4,
+      "f1": 48.9
+    },
+    {
+      "t": 0.35,
+      "precision": 43.2,
+      "recall": 48.7,
+      "f1": 45.8
+    },
+    {
+      "t": 0.4,
+      "precision": 54.8,
+      "recall": 43.6,
+      "f1": 48.6
+    },
+    {
+      "t": 0.45,
+      "precision": 65.2,
+      "recall": 38.5,
+      "f1": 48.4
+    },
+    {
+      "t": 0.5,
+      "precision": 66.7,
+      "recall": 25.6,
+      "f1": 37.0
+    },
+    {
+      "t": 0.55,
+      "precision": 85.7,
+      "recall": 15.4,
+      "f1": 26.1
+    },
+    {
+      "t": 0.6,
+      "precision": 100.0,
+      "recall": 7.7,
+      "f1": 14.3
+    },
+    {
+      "t": 0.65,
+      "precision": 100.0,
+      "recall": 2.6,
+      "f1": 5.0
+    },
+    {
+      "t": 0.7,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  ],
+  "api_examples": [
+    {
+      "age": 24,
+      "gender": "Male",
+      "department": "Sales",
+      "city": "Phoenix",
+      "years_experience": 1,
+      "monthly_salary": 28000,
+      "performance_score": 1,
+      "tag": "Junior, low performance",
+      "proba": 0.493,
+      "attrition": "No",
+      "band": "Medium"
+    },
+    {
+      "age": 29,
+      "gender": "Female",
+      "department": "Sales",
+      "city": "New York",
+      "years_experience": 3,
+      "monthly_salary": 38000,
+      "performance_score": 2,
+      "tag": "UI default example",
+      "proba": 0.487,
+      "attrition": "No",
+      "band": "Medium"
+    },
+    {
+      "age": 48,
+      "gender": "Male",
+      "department": "IT",
+      "city": "Chicago",
+      "years_experience": 22,
+      "monthly_salary": 92000,
+      "performance_score": 5,
+      "tag": "Senior high performer",
+      "proba": 0.127,
+      "attrition": "No",
+      "band": "Low"
+    }
+  ],
+  "preprocessed_example": {
+    "input": {
+      "age": 29,
+      "gender": "Female",
+      "department": "Sales",
+      "city": "New York",
+      "years_experience": 3,
+      "monthly_salary": 38000,
+      "performance_score": 2
+    },
+    "output_dim": 16,
+    "feature_names": [
+      "age",
+      "years_experience",
+      "monthly_salary",
+      "performance_score",
+      "gender_Female",
+      "gender_Male",
+      "department_Finance",
+      "department_HR",
+      "department_IT",
+      "department_Marketing",
+      "department_Sales",
+      "city_Chicago",
+      "city_Houston",
+      "city_Los Angeles",
+      "city_New York",
+      "city_Phoenix"
+    ],
+    "values": [
+      -1.07,
+      -1.091,
+      -1.48,
+      -0.685,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  "scaler_mean": {
+    "age": 40.92,
+    "years_experience": 11.11,
+    "monthly_salary": 52160.8,
+    "performance_score": 2.98
+  },
+  "scaler_scale": {
+    "age": 11.14,
+    "years_experience": 7.43,
+    "monthly_salary": 9570.87,
+    "performance_score": 1.43
+  },
+  "file_sizes_mb": {
+    "joblib": 6.93,
+    "pickle": 6.91
+  }
+}

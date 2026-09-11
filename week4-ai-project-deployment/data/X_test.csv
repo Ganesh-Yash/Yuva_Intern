@@ -1,0 +1,161 @@
+age,years_experience,monthly_salary,performance_score,gender,department,city
+32,3,47290.36,4,Female,Finance,Houston
+43,8,46997.68,4,Female,HR,New York
+33,7,49146.05,2,Male,IT,Phoenix
+50,8,54103.58,4,Female,Marketing,Houston
+21,0,49567.06,5,Female,Finance,New York
+22,1,49872.13,5,Female,Finance,Los Angeles
+33,7,65929.63,5,Female,Finance,Chicago
+29,5,59028.91,5,Male,IT,Chicago
+59,17,49048.33,5,Male,HR,New York
+49,8,50213.2,5,Male,HR,Houston
+21,0,48386.68,5,Female,Marketing,Phoenix
+41,14,58968.45,4,Male,Finance,New York
+22,0,45404.06,3,Male,Sales,Phoenix
+52,15,55999.94,5,Female,Marketing,Los Angeles
+24,2,39374.92,4,Female,Marketing,New York
+49,15,65557.18,5,Male,Finance,New York
+34,7,47591.14,3,Female,Sales,Los Angeles
+36,8,43633.31,3,Female,Sales,New York
+59,12,47278.87,3,Female,Sales,New York
+41,10,47429.46,1,Male,IT,Phoenix
+51,16,52264.88,2,Female,Sales,Houston
+28,4,48809.3,5,Male,Finance,Phoenix
+43,18,46582.28,3,Female,HR,Phoenix
+51,19,63339.99,4,Male,HR,Houston
+24,1,41681.45,4,Female,Sales,New York
+26,4,41110.92,1,Male,Finance,Chicago
+51,12,49252.22,5,Male,Sales,Phoenix
+28,4,59365.86,5,Female,IT,New York
+23,2,43355.71,4,Male,IT,Los Angeles
+43,13,57743.46,3,Female,IT,Los Angeles
+32,4,42785.59,3,Male,HR,New York
+22,0,37374.55,3,Male,Sales,New York
+37,12,50421.4,2,Female,IT,New York
+24,1,32231.34,1,Female,Marketing,Chicago
+50,19,67569.1,3,Female,Finance,Phoenix
+52,11,58627.74,4,Female,IT,Phoenix
+21,0,41868.59,3,Male,Sales,Chicago
+55,17,58791.66,3,Male,Marketing,Chicago
+37,8,63004.95,4,Female,IT,New York
+43,13,59537.58,5,Male,Finance,Los Angeles
+46,17,68019.13,5,Female,Finance,Los Angeles
+33,10,55897.68,2,Female,Finance,Los Angeles
+49,11,65567.19,5,Male,Finance,Phoenix
+59,20,55890.63,2,Male,Sales,Houston
+23,2,47190.11,3,Female,Finance,Phoenix
+38,6,56328.7,4,Male,Sales,Los Angeles
+26,3,45910.82,3,Female,Finance,New York
+28,3,48816.68,2,Male,IT,Phoenix
+50,16,53403.57,2,Female,Marketing,Houston
+32,3,47895.02,4,Female,Finance,Houston
+34,9,41991.97,2,Female,HR,Los Angeles
+46,12,50484.74,5,Male,Marketing,Chicago
+32,7,48259.74,5,Female,HR,New York
+21,0,38617.65,2,Male,HR,Chicago
+55,24,72709.22,5,Male,IT,Los Angeles
+38,8,44344.84,5,Female,HR,Chicago
+26,4,38184.61,2,Male,Marketing,Houston
+49,21,58878.98,3,Male,HR,New York
+31,7,51555.52,2,Female,Sales,New York
+26,3,46866.3,5,Female,HR,Houston
+47,7,28341.74,1,Male,HR,Houston
+59,14,60178.33,5,Female,HR,New York
+34,6,43940.91,1,Male,Sales,Los Angeles
+33,10,52545.23,2,Female,IT,Los Angeles
+39,10,39072.18,1,Male,HR,Chicago
+56,28,67838.81,5,Male,Marketing,New York
+56,25,62591.56,2,Male,Sales,Los Angeles
+59,30,72675.11,3,Female,Finance,Chicago
+57,19,65759.44,5,Female,Sales,New York
+41,14,45387.75,2,Female,Marketing,Houston
+49,15,57932.82,4,Male,Finance,Chicago
+49,15,63583.36,5,Female,Sales,Chicago
+21,0,46753.65,5,Male,Finance,Los Angeles
+23,2,44775.84,3,Male,Marketing,Houston
+41,13,53841.82,5,Female,Marketing,Phoenix
+24,2,35872.09,3,Female,Marketing,New York
+56,29,66849.61,1,Male,IT,Chicago
+21,0,42414.19,5,Male,HR,New York
+48,14,58091.4,3,Male,Sales,Phoenix
+29,6,59318.71,5,Female,IT,Phoenix
+39,14,58050.91,4,Male,IT,Los Angeles
+38,14,60302.43,2,Female,Finance,Houston
+52,8,34271.33,2,Male,HR,Los Angeles
+41,10,55852.31,4,Female,IT,Los Angeles
+56,22,66064.94,3,Male,IT,Phoenix
+37,11,42639.52,1,Female,Marketing,New York
+58,28,68407.68,1,Male,Finance,Chicago
+50,9,62614.78,5,Female,IT,Houston
+30,2,45551.8,4,Female,Sales,Los Angeles
+40,16,51347.64,2,Female,Finance,Houston
+24,1,44536.96,3,Male,HR,Houston
+27,2,41960.8,3,Male,Sales,Phoenix
+37,11,57556.09,3,Male,IT,Phoenix
+48,19,53409.24,2,Male,Sales,Phoenix
+32,8,56326.89,5,Female,Finance,Houston
+25,1,48315.18,4,Male,IT,New York
+46,9,44353.14,4,Male,HR,New York
+23,2,45835.0,1,Female,IT,Chicago
+37,8,50643.41,5,Female,Finance,Houston
+44,12,43542.76,4,Male,Marketing,Los Angeles
+21,0,42189.0,1,Male,IT,New York
+53,13,61984.87,4,Male,Finance,Phoenix
+36,8,42994.63,3,Male,Sales,Houston
+43,7,43074.39,4,Female,HR,Houston
+34,8,54135.49,4,Male,IT,New York
+31,8,57678.53,4,Female,IT,Chicago
+29,5,37326.5,1,Female,HR,Houston
+53,25,65862.26,4,Male,HR,Phoenix
+50,22,55785.6,1,Male,Sales,Phoenix
+55,26,64674.32,4,Female,IT,Houston
+52,9,45019.34,5,Male,HR,Los Angeles
+56,20,54511.0,1,Female,IT,Phoenix
+38,9,52731.71,5,Male,Marketing,Chicago
+52,9,50694.78,5,Female,HR,Chicago
+42,6,56261.52,3,Male,Finance,Phoenix
+55,29,63236.65,3,Female,HR,Los Angeles
+25,3,53590.59,3,Female,Finance,Phoenix
+57,16,65017.73,1,Male,IT,Los Angeles
+35,7,43896.02,3,Male,Marketing,New York
+59,11,51387.18,2,Male,Marketing,Houston
+34,8,41139.91,2,Male,Marketing,New York
+36,10,55086.79,5,Female,Finance,Chicago
+24,1,52576.14,2,Male,IT,Houston
+58,28,59713.18,2,Male,HR,Phoenix
+53,25,61112.0,4,Female,Marketing,New York
+28,4,62759.42,5,Male,IT,Houston
+46,13,56703.01,5,Male,Marketing,Phoenix
+31,5,43899.18,2,Male,Sales,Phoenix
+55,24,64666.69,4,Male,Marketing,Houston
+57,26,62156.42,2,Female,HR,New York
+34,4,43646.43,5,Female,HR,Chicago
+23,1,37391.45,2,Female,Finance,Chicago
+57,11,51046.55,1,Female,Finance,Houston
+42,8,44941.55,2,Male,Marketing,Los Angeles
+39,13,56422.39,3,Male,Marketing,Houston
+45,14,62672.95,5,Female,Sales,Houston
+52,15,49720.33,1,Male,Sales,Houston
+25,2,48470.18,4,Female,Sales,Phoenix
+22,1,41937.31,3,Female,Sales,Phoenix
+45,13,46502.22,2,Female,Marketing,Los Angeles
+57,23,73611.04,3,Male,IT,New York
+37,7,60461.53,5,Female,IT,New York
+26,3,45536.71,3,Male,IT,Houston
+35,11,51187.79,4,Female,HR,New York
+21,0,34520.16,4,Female,HR,Phoenix
+53,12,56217.51,4,Female,Marketing,Phoenix
+46,21,53668.22,3,Male,Sales,Houston
+55,9,47533.99,3,Female,Finance,Phoenix
+28,4,48690.25,4,Male,Sales,Houston
+22,0,35455.72,1,Male,Finance,Los Angeles
+24,2,36192.67,2,Male,HR,Phoenix
+53,13,54298.53,4,Female,Marketing,Chicago
+45,19,66503.82,2,Male,IT,Phoenix
+23,2,39243.32,2,Female,Sales,Houston
+21,0,49000.75,5,Female,Finance,Los Angeles
+25,2,46592.2,4,Female,Sales,Chicago
+55,26,58188.45,2,Female,HR,New York
+57,29,63363.05,5,Female,Marketing,Houston
+57,26,63757.28,1,Male,Sales,New York
+35,10,56433.92,3,Female,IT,Phoenix

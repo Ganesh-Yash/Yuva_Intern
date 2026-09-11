@@ -1,0 +1,402 @@
+{
+  "n_rows": 720,
+  "n_cluster_features": 4,
+  "cluster_features": [
+    "Age",
+    "YearsExperience",
+    "MonthlySalary",
+    "PerformanceScore"
+  ],
+  "attrition_counts": {
+    "No": 515,
+    "Yes": 205
+  },
+  "true_segment_counts": {
+    "0": 291,
+    "1": 270,
+    "2": 159
+  },
+  "attrition_mapping": {
+    "No": 0,
+    "Yes": 1
+  },
+  "k_range": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "inertias": [
+    1161.9,
+    653.9,
+    503.5,
+    395.5,
+    341.3,
+    299.7,
+    271.7
+  ],
+  "silhouettes": [
+    0.483,
+    0.472,
+    0.431,
+    0.438,
+    0.404,
+    0.393,
+    0.381
+  ],
+  "best_k_silhouette": 2,
+  "best_silhouette": 0.483,
+  "chosen_k": 3,
+  "kmeans_silhouette": 0.472,
+  "kmeans_inertia": 653.9,
+  "kmeans_sizes": {
+    "0": 263,
+    "1": 147,
+    "2": 310
+  },
+  "hier_silhouette": 0.453,
+  "hier_sizes": {
+    "0": 305,
+    "1": 259,
+    "2": 156
+  },
+  "pca_explained": [
+    84.1,
+    14.2
+  ],
+  "pca_total_2d": 98.3,
+  "pca_cum_var": [
+    84.1,
+    98.3,
+    99.6,
+    100.0
+  ],
+  "kmeans_profiles": {
+    "0": {
+      "Age": 36.4,
+      "YearsExperience": 13.3,
+      "MonthlySalary": 63898.9,
+      "PerformanceScore": 3.8
+    },
+    "1": {
+      "Age": 48.5,
+      "YearsExperience": 26.6,
+      "MonthlySalary": 103066.0,
+      "PerformanceScore": 4.2
+    },
+    "2": {
+      "Age": 26.4,
+      "YearsExperience": 4.2,
+      "MonthlySalary": 35705.8,
+      "PerformanceScore": 2.4
+    }
+  },
+  "kmeans_true_agreement": 94.3,
+  "kmeans_personas": {
+    "2": "Early-career",
+    "0": "Mid-career specialists",
+    "1": "Senior high-performers"
+  },
+  "clf_train": 576,
+  "clf_test": 144,
+  "attrition_rate": 28.5,
+  "cv_results": {
+    "Logistic Regression": {
+      "accuracy": {
+        "mean": 77.6,
+        "std": 2.5
+      },
+      "precision": {
+        "mean": 66.0,
+        "std": 7.8
+      },
+      "recall": {
+        "mean": 47.8,
+        "std": 5.9
+      },
+      "f1": {
+        "mean": 54.8,
+        "std": 3.6
+      },
+      "roc_auc": {
+        "mean": 0.802,
+        "std": 0.029
+      }
+    },
+    "Decision Tree": {
+      "accuracy": {
+        "mean": 76.8,
+        "std": 1.8
+      },
+      "precision": {
+        "mean": 63.0,
+        "std": 5.3
+      },
+      "recall": {
+        "mean": 45.4,
+        "std": 6.1
+      },
+      "f1": {
+        "mean": 52.5,
+        "std": 5.1
+      },
+      "roc_auc": {
+        "mean": 0.763,
+        "std": 0.033
+      }
+    },
+    "Random Forest": {
+      "accuracy": {
+        "mean": 76.9,
+        "std": 3.2
+      },
+      "precision": {
+        "mean": 63.7,
+        "std": 10.0
+      },
+      "recall": {
+        "mean": 48.8,
+        "std": 5.3
+      },
+      "f1": {
+        "mean": 54.7,
+        "std": 4.4
+      },
+      "roc_auc": {
+        "mean": 0.796,
+        "std": 0.032
+      }
+    },
+    "K-Nearest Neighbors": {
+      "accuracy": {
+        "mean": 69.7,
+        "std": 3.5
+      },
+      "precision": {
+        "mean": 44.9,
+        "std": 12.3
+      },
+      "recall": {
+        "mean": 22.9,
+        "std": 5.9
+      },
+      "f1": {
+        "mean": 30.1,
+        "std": 7.3
+      },
+      "roc_auc": {
+        "mean": 0.683,
+        "std": 0.025
+      }
+    }
+  },
+  "holdout_default": {
+    "accuracy": 78.5,
+    "precision": 69.2,
+    "recall": 43.9,
+    "f1": 53.7,
+    "roc_auc": 0.812,
+    "confusion_matrix": [
+      [
+        95,
+        8
+      ],
+      [
+        23,
+        18
+      ]
+    ]
+  },
+  "best_params": {
+    "max_depth": 4,
+    "max_features": "sqrt",
+    "min_samples_split": 2,
+    "n_estimators": 400
+  },
+  "best_cv_f1": 53.8,
+  "holdout_tuned": {
+    "accuracy": 77.8,
+    "precision": 66.7,
+    "recall": 43.9,
+    "f1": 52.9,
+    "roc_auc": 0.816,
+    "confusion_matrix": [
+      [
+        94,
+        9
+      ],
+      [
+        23,
+        18
+      ]
+    ]
+  },
+  "top_features": {
+    "MonthlySalary": 0.286,
+    "YearsExperience": 0.237,
+    "Age": 0.225,
+    "PerformanceScore": 0.162,
+    "Dept_IT": 0.013,
+    "Gender": 0.013,
+    "City_Los Angeles": 0.012,
+    "Dept_Marketing": 0.011
+  },
+  "examples": [
+    {
+      "id": 3655,
+      "cluster": 0,
+      "persona": "Mid-career specialists",
+      "age": 37.0,
+      "exp": 13.0,
+      "salary": 66092.7,
+      "perf": 4,
+      "attrition": "No",
+      "scaled": [
+        0.27,
+        0.1,
+        0.24,
+        0.65
+      ],
+      "dist": {
+        "0": 0.239,
+        "1": 2.419,
+        "2": 2.381
+      },
+      "sil": 0.634
+    },
+    {
+      "id": 3680,
+      "cluster": 1,
+      "persona": "Senior high-performers",
+      "age": 48.0,
+      "exp": 27.0,
+      "salary": 101463.02,
+      "perf": 4,
+      "attrition": "No",
+      "scaled": [
+        1.47,
+        1.64,
+        1.59,
+        0.65
+      ],
+      "dist": {
+        "0": 2.451,
+        "1": 0.232,
+        "2": 4.499
+      },
+      "sil": 0.64
+    },
+    {
+      "id": 3643,
+      "cluster": 2,
+      "persona": "Early-career",
+      "age": 26.0,
+      "exp": 4.0,
+      "salary": 34984.83,
+      "perf": 2,
+      "attrition": "Yes",
+      "scaled": [
+        -0.94,
+        -0.89,
+        -0.94,
+        -1.14
+      ],
+      "dist": {
+        "0": 2.456,
+        "1": 4.794,
+        "2": 0.36
+      },
+      "sil": 0.651
+    }
+  ],
+  "scale_means": {
+    "Age": 34.57,
+    "YearsExperience": 12.12,
+    "MonthlySalary": 59756.83,
+    "PerformanceScore": 3.27
+  },
+  "scale_stds": {
+    "Age": 9.13,
+    "YearsExperience": 9.08,
+    "MonthlySalary": 26234.63,
+    "PerformanceScore": 1.12
+  },
+  "threshold_sweep": [
+    {
+      "t": 0.2,
+      "precision": 42.7,
+      "recall": 85.4,
+      "f1": 56.9
+    },
+    {
+      "t": 0.25,
+      "precision": 50.0,
+      "recall": 82.9,
+      "f1": 62.4
+    },
+    {
+      "t": 0.3,
+      "precision": 53.1,
+      "recall": 82.9,
+      "f1": 64.8
+    },
+    {
+      "t": 0.35,
+      "precision": 56.1,
+      "recall": 78.0,
+      "f1": 65.3
+    },
+    {
+      "t": 0.4,
+      "precision": 56.9,
+      "recall": 70.7,
+      "f1": 63.0
+    },
+    {
+      "t": 0.45,
+      "precision": 62.2,
+      "recall": 56.1,
+      "f1": 59.0
+    },
+    {
+      "t": 0.5,
+      "precision": 66.7,
+      "recall": 43.9,
+      "f1": 52.9
+    },
+    {
+      "t": 0.55,
+      "precision": 69.2,
+      "recall": 22.0,
+      "f1": 33.3
+    },
+    {
+      "t": 0.6,
+      "precision": 100.0,
+      "recall": 12.2,
+      "f1": 21.7
+    },
+    {
+      "t": 0.65,
+      "precision": 100.0,
+      "recall": 4.9,
+      "f1": 9.3
+    },
+    {
+      "t": 0.7,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  ],
+  "balanced": {
+    "precision": 54.1,
+    "recall": 80.5,
+    "f1": 64.7
+  },
+  "inertia_drop_2_3": 508.0,
+  "inertia_drop_3_4": 150.4
+}
