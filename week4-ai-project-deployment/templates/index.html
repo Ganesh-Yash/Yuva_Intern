@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Attrition Risk Predictor</title>
+  <style>
+    :root {
+      --navy: #1f4e79;
+      --blue: #2e75b6;
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #1d2a3a;
+      --muted: #5b6b7c;
+      --line: #d7e1ec;
+      --low: #1e8449;
+      --mid: #b9770e;
+      --high: #c0392b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: radial-gradient(1200px 500px at 10% -10%, #d6eaf8 0%, transparent 50%),
+                  radial-gradient(900px 400px at 100% 0%, #e8daef 0%, transparent 45%),
+                  var(--bg);
+      color: var(--text);
+    }
+    header {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 32px 24px 8px;
+    }
+    header p.kicker {
+      color: var(--blue);
+      letter-spacing: 0.12em;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0 0 6px;
+    }
+    h1 { margin: 0 0 8px; font-size: 32px; color: var(--navy); }
+    .sub { color: var(--muted); margin: 0; max-width: 640px; line-height: 1.5; }
+    nav { margin-top: 14px; display: flex; gap: 14px; flex-wrap: wrap; }
+    nav a { color: var(--blue); font-size: 14px; }
+    main {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 20px 24px 64px;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 22px;
+    }
+    @media (max-width: 860px) { main { grid-template-columns: 1fr; } }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 22px;
+      box-shadow: 0 10px 30px rgba(31, 78, 121, 0.06);
+    }
+    h2 { margin: 0 0 16px; font-size: 18px; color: var(--navy); }
+    form { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 16px; }
+    label { display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: var(--muted); font-weight: 600; }
+    input, select {
+      height: 40px; border-radius: 10px; border: 1px solid var(--line);
+      padding: 0 10px; font-size: 14px; color: var(--text); background: #fff;
+    }
+    button {
+      grid-column: 1 / -1; height: 44px; border: 0; border-radius: 10px;
+      background: var(--navy); color: #fff; font-weight: 700; font-size: 15px; cursor: pointer;
+    }
+    button:hover { background: var(--blue); }
+    .result { min-height: 280px; }
+    .gauge {
+      height: 14px; background: #eef3f8; border-radius: 99px; overflow: hidden; margin: 10px 0 18px;
+    }
+    .gauge > span { display: block; height: 100%; background: var(--navy); width: 0; transition: width 0.4s ease; }
+    .pill {
+      display: inline-block; padding: 4px 10px; border-radius: 99px; font-size: 12px; font-weight: 700;
+      letter-spacing: 0.04em; text-transform: uppercase;
+    }
+    .Low { background: #d5f5e3; color: var(--low); }
+    .Medium { background: #fdebd0; color: var(--mid); }
+    .High { background: #fadbd8; color: var(--high); }
+    .muted { color: var(--muted); font-size: 14px; line-height: 1.55; }
+    .placeholder { color: var(--muted); padding-top: 36px; text-align: center; }
+    .err { color: var(--high); font-size: 14px; }
+    footer { max-width: 1080px; margin: 0 auto; padding: 0 24px 28px; color: var(--muted); font-size: 12px; }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="kicker">Week 4 · AI Project Deployment &amp; Capstone</p>
+    <h1>Employee Attrition Risk Predictor</h1>
+    <p class="sub">Score one employee with the serialised Random Forest pipeline. The browser calls <code>/predict</code> on this same origin — no hardcoded localhost.</p>
+    <nav>
+      <a href="/docs">API docs</a>
+      <a href="/presentation">Presentation</a>
+      <a href="/metadata">Model metadata</a>
+      <a href="/health">Health</a>
+    </nav>
+  </header>
+  <main>
+    <section class="card">
+      <h2>Employee profile</h2>
+      <form id="form">
+        <label>Age
+          <input type="number" name="age" min="18" max="70" value="29" required />
+        </label>
+        <label>Years of experience
+          <input type="number" name="years_experience" min="0" max="45" value="3" required />
+        </label>
+        <label>Gender
+          <select name="gender">
+            <option>Female</option>
+            <option>Male</option>
+          </select>
+        </label>
+        <label>Department
+          <select name="department">
+            <option>Sales</option>
+            <option>IT</option>
+            <option>HR</option>
+            <option>Finance</option>
+            <option>Marketing</option>
+          </select>
+        </label>
+        <label>City
+          <select name="city">
+            <option>New York</option>
+            <option>Chicago</option>
+            <option>Houston</option>
+            <option>Phoenix</option>
+            <option>Los Angeles</option>
+          </select>
+        </label>
+        <label>Performance score (1–5)
+          <input type="number" name="performance_score" min="1" max="5" value="2" required />
+        </label>
+        <label style="grid-column: 1 / -1">Monthly salary
+          <input type="number" name="monthly_salary" min="10000" max="250000" step="100" value="38000" required />
+        </label>
+        <button type="submit">Predict leaving risk</button>
+      </form>
+    </section>
+    <section class="card result" id="out">
+      <div class="placeholder">Submit a profile to see predicted attrition, probability and risk band.</div>
+    </section>
+  </main>
+  <footer>Yuva Intern · Week 4 capstone · Model loaded with Joblib from models/attrition_pipeline.joblib</footer>
+  <script>
+    const form = document.getElementById("form");
+    const out = document.getElementById("out");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(form).entries());
+      data.age = Number(data.age);
+      data.years_experience = Number(data.years_experience);
+      data.monthly_salary = Number(data.monthly_salary);
+      data.performance_score = Number(data.performance_score);
+      out.innerHTML = "<p class='muted'>Scoring…</p>";
+      try {
+        const res = await fetch("/predict", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        });
+        const body = await res.json();
+        if (!res.ok) {
+          out.innerHTML = `<p class="err">${body.detail ? JSON.stringify(body.detail) : "Request failed"}</p>`;
+          return;
+        }
+        const pct = Math.round(body.probability_leave * 100);
+        out.innerHTML = `
+          <h2>Prediction</h2>
+          <p><span class="pill ${body.risk_level}">${body.risk_level} risk</span></p>
+          <p style="font-size:28px;margin:12px 0 4px;color:var(--navy);font-weight:700">
+            ${pct}% chance of leaving
+          </p>
+          <div class="gauge"><span style="width:${pct}%"></span></div>
+          <p class="muted"><strong>Class label:</strong> Attrition = ${body.attrition}</p>
+          <p class="muted">${body.message}</p>
+        `;
+      } catch (err) {
+        out.innerHTML = `<p class="err">${err}</p>`;
+      }
+    });
+  </script>
+</body>
+</html>

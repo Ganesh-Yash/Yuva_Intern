@@ -5,15 +5,25 @@ Weekly deliverables for the ML internship, built in Python with Pandas, NumPy, a
 ## Structure
 
 ```
-ml-internship-tasks/
+Yuva_Intern/
 ├── week1-data-preprocessing/
-│   ├── process_data.py              # cleaning, missing values, encoding, scaling, EDA
-│   ├── data/                        # raw + cleaned CSVs
-│   └── outputs/                     # EDA and preprocessing charts
+│   ├── process_data.py
+│   ├── data/
+│   └── outputs/
 ├── week2-supervised-ml-models/
-│   ├── process_week2.py             # train/test split, 6 models, evaluation
-│   ├── data/                        # raw + model-ready CSVs
-│   └── outputs/                     # confusion matrices, ROC curves, comparison charts
+│   ├── process_week2.py
+│   ├── data/
+│   └── outputs/
+├── week3-unsupervised-model-evaluation/
+│   ├── process_week3.py              # K-Means, hierarchical, PCA, CV, GridSearchCV
+│   ├── data/
+│   └── outputs/
+├── week4-ai-project-deployment/
+│   ├── train_model.py                # pipeline + joblib/pickle artefacts
+│   ├── app.py                        # FastAPI predictor + UI
+│   ├── models/
+│   └── templates/
+├── report_utils.py                   # shared Word-report helper
 └── requirements.txt
 ```
 
@@ -35,9 +45,30 @@ cd week2-supervised-ml-models
 python3 process_week2.py
 ```
 
+## Week 3 — Unsupervised Learning & Model Evaluation
+Clusters the employee sample with **K-Means** (elbow + silhouette) and **hierarchical (Ward)** clustering, visualises groups with **PCA**, then evaluates attrition classifiers with **stratified 5-fold CV**, confusion matrices, precision / recall / F1 / ROC-AUC, and **GridSearchCV**.
+
+```
+cd week3-unsupervised-model-evaluation
+python3 process_week3.py
+```
+
+## Week 4 — AI Project Deployment & Capstone
+Trains a preprocessing + Random Forest **Pipeline**, serialises it with **Joblib and Pickle**, and serves **POST /predict** plus an HR web UI from **FastAPI**.
+
+```
+cd week4-ai-project-deployment
+python3 train_model.py
+uvicorn app:app --host 0.0.0.0 --port 8000
+```
+
+Open `/` for the predictor, `/presentation` for the slide deck, `/docs` for OpenAPI.
+
 ## Setup
 
 ```
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 

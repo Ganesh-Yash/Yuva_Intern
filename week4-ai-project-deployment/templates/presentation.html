@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Week 4 Capstone Presentation</title>
+  <style>
+    :root { --navy:#1f4e79; --blue:#2e75b6; --bg:#0e2438; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:"Segoe UI", system-ui, sans-serif; background:var(--bg); color:#f4f7fb; }
+    .deck { max-width: 960px; margin: 0 auto; padding: 28px 20px 80px; }
+    .top { display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; color:#9bb4c9; font-size:13px; }
+    .top a { color:#9fd3ff; }
+    .slide {
+      background: linear-gradient(180deg, #16344f, #102536);
+      border: 1px solid #2b5270;
+      border-radius: 18px;
+      padding: 36px 40px;
+      min-height: 420px;
+      display: none;
+      box-shadow: 0 18px 50px rgba(0,0,0,.28);
+    }
+    .slide.on { display: block; }
+    h1 { font-size: 34px; margin: 0 0 10px; color:#fff; }
+    h2 { font-size: 26px; margin: 0 0 16px; color:#fff; }
+    .kicker { color:#7ec8ff; letter-spacing:.14em; text-transform:uppercase; font-size:12px; font-weight:700; }
+    p, li { line-height: 1.55; font-size: 18px; color:#d7e6f2; }
+    ul { padding-left: 1.2em; }
+    .row { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+    @media (max-width:700px){ .row{grid-template-columns:1fr;} .slide{padding:24px;} }
+    .metric { background:#0c2236; border:1px solid #2b5270; border-radius:12px; padding:14px 16px; }
+    .metric b { display:block; font-size:22px; color:#fff; }
+    .controls { display:flex; gap:10px; margin-top:16px; }
+    button {
+      background:#2e75b6; color:#fff; border:0; border-radius:10px;
+      padding:10px 16px; font-weight:700; cursor:pointer;
+    }
+    button.ghost { background:transparent; border:1px solid #2b5270; }
+  </style>
+</head>
+<body>
+  <div class="deck">
+    <div class="top">
+      <span>Yuva Intern · Week 4 · Vutukuri Yaswanth Ganesh Kumar</span>
+      <a href="/">← Back to app</a>
+    </div>
+
+    <section class="slide on">
+      <p class="kicker">Capstone presentation</p>
+      <h1>Employee Attrition Risk Application</h1>
+      <p>An end-to-end machine learning product: preprocess, train, test, serialise with Joblib/Pickle, and deploy a FastAPI prediction service with a simple HR UI.</p>
+      <p>Week 4 of the ML internship · 11 September 2026</p>
+    </section>
+
+    <section class="slide">
+      <h2>The problem</h2>
+      <ul>
+        <li>HR wants an early signal that an employee may leave.</li>
+        <li>Weeks 1–3 built cleaning, models, clustering and evaluation on this schema.</li>
+        <li>Week 4 ships the model: a real API a person can call, not a notebook cell.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>What was built</h2>
+      <ul>
+        <li>sklearn Pipeline: StandardScaler + OneHotEncoder + Random Forest.</li>
+        <li>GridSearchCV on F1, then a clean hold-out test.</li>
+        <li>Artefacts: <code>attrition_pipeline.joblib</code> and <code>.pkl</code>.</li>
+        <li>FastAPI: <code>POST /predict</code>, plus health, metadata, docs and UI.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Data &amp; features</h2>
+      <div class="row">
+        <div>
+          <ul>
+            <li>Numeric: age, tenure, salary, performance.</li>
+            <li>Categorical: gender, department, city.</li>
+            <li>Target: Attrition Yes/No (imbalanced).</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>Preprocessing lives inside the Pipeline.</li>
+            <li>The API cannot skip a step or scramble dummy columns.</li>
+            <li>Unknown categories are ignored, not fatal.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>Evaluation (hold-out)</h2>
+      <p>Accuracy is reported, but F1 and ROC-AUC are the numbers that matter on an imbalanced leave class. Full tables are in the Word report.</p>
+      <ul>
+        <li>Confusion matrix — missed leavers vs false alarms.</li>
+        <li>ROC curve — ranking quality across thresholds.</li>
+        <li>The API returns a probability and Low/Medium/High band so callers can pick their own cutoff.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Serialisation</h2>
+      <ul>
+        <li><b>Joblib</b> — what the server loads at startup. Efficient for sklearn trees.</li>
+        <li><b>Pickle</b> — same object, standard-library format, submitted alongside.</li>
+        <li>Load only trusted files: both formats can execute code on unpickle.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>API contract</h2>
+      <ul>
+        <li><code>POST /predict</code> — JSON employee in, attrition + probability + risk band out.</li>
+        <li><code>GET /</code> — HR form. Uses relative <code>/predict</code>, not localhost.</li>
+        <li><code>GET /docs</code> — OpenAPI. <code>GET /health</code> — liveness.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>How to run</h2>
+      <p><code>cd week4-ai-project-deployment</code></p>
+      <p><code>python3 train_model.py</code> &nbsp;(optional rebuild)</p>
+      <p><code>uvicorn app:app --host 0.0.0.0 --port 8000</code></p>
+      <p>Open the service origin. Bind address is 0.0.0.0 so a preview proxy can reach it.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Takeaways</h2>
+      <ul>
+        <li>A model is not deployed until preprocessing ships with it.</li>
+        <li>Joblib/Pickle turn a fitted Pipeline into a file the API can load once.</li>
+        <li>FastAPI gives validation, JSON, docs and a UI from one process.</li>
+        <li>Next steps on real data: drift monitoring, fairness review, threshold policy.</li>
+      </ul>
+    </section>
+
+    <div class="controls">
+      <button class="ghost" id="prev">Previous</button>
+      <button id="next">Next</button>
+      <span id="pos" style="margin-left:8px;color:#9bb4c9;align-self:center"></span>
+    </div>
+  </div>
+  <script>
+    const slides = [...document.querySelectorAll(".slide")];
+    let i = 0;
+    const show = () => {
+      slides.forEach((s, idx) => s.classList.toggle("on", idx === i));
+      document.getElementById("pos").textContent = `${i + 1} / ${slides.length}`;
+    };
+    document.getElementById("next").onclick = () => { i = Math.min(slides.length - 1, i + 1); show(); };
+    document.getElementById("prev").onclick = () => { i = Math.max(0, i - 1); show(); };
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowRight") document.getElementById("next").click();
+      if (e.key === "ArrowLeft") document.getElementById("prev").click();
+    });
+    show();
+  </script>
+</body>
+</html>

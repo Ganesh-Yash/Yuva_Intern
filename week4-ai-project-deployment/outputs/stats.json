@@ -1,0 +1,54 @@
+{
+  "n_rows": 800,
+  "n_train": 640,
+  "n_test": 160,
+  "attrition_yes": 195,
+  "attrition_no": 605,
+  "attrition_rate": 24.4,
+  "best_params": {
+    "max_depth": "None",
+    "max_features": "sqrt",
+    "min_samples_split": 2,
+    "n_estimators": 300
+  },
+  "best_cv_f1": 25.5,
+  "test": {
+    "accuracy": 78.8,
+    "precision": 66.7,
+    "recall": 25.6,
+    "f1": 37.0,
+    "roc_auc": 0.738,
+    "confusion_matrix": [
+      [
+        116,
+        5
+      ],
+      [
+        29,
+        10
+      ]
+    ]
+  },
+  "classification_report": "              precision    recall  f1-score   support\n\n        Stay       0.80      0.96      0.87       121\n       Leave       0.67      0.26      0.37        39\n\n    accuracy                           0.79       160\n   macro avg       0.73      0.61      0.62       160\nweighted avg       0.77      0.79      0.75       160\n",
+  "top_features": {
+    "monthly_salary": 0.253,
+    "age": 0.176,
+    "years_experience": 0.164,
+    "performance_score": 0.155,
+    "city_Houston": 0.024,
+    "gender_Male": 0.023,
+    "department_Finance": 0.022,
+    "department_IT": 0.022
+  },
+  "example_input": {
+    "age": 29,
+    "gender": "Female",
+    "department": "Sales",
+    "city": "New York",
+    "years_experience": 3,
+    "monthly_salary": 38000,
+    "performance_score": 2
+  },
+  "example_pred": "No",
+  "example_proba": 0.487
+}
